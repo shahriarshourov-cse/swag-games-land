@@ -6,7 +6,7 @@ const Test = () => {
     <div>
       <h1> Number : {num}</h1>
       <Button onClick={() => changeNum(num + 1)}>Test-State</Button>
-      <Button colorScheme="blue">Button</Button>
+      <Button colorScheme="blue">Button</Button>{" "}
     </div>
   );
 };

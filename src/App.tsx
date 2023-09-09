@@ -1,10 +1,24 @@
-import Test from "./Components/Test";
+import { Grid, GridItem } from "@chakra-ui/react";
 
 function App() {
   return (
     <>
-      <p>Hi,Gamers!</p>
-      <Test></Test>
+      <Grid
+        templateAreas={{
+          base: `"nav nav" "aside main"`,
+          lg: `"nav nav" "aside main"`,
+        }}
+      >
+        <GridItem area="nav" bg="coral">
+          Nav
+        </GridItem>
+        <GridItem area="aside" bg="gold">
+          Aside
+        </GridItem>
+        <GridItem area="main" bg="dodgerblue">
+          Main
+        </GridItem>
+      </Grid>
     </>
   );
 }
